@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../font/Gotham-Book.woff2') format('woff2'),
+        url('../font/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'GothamBook';
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weekdays {
+    margin-top: 100px;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.day {
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.calendar {
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar__item {
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px;
+}
+.currant {
+    background-color: aqua;
+}
+.calendar__item_passive {
+    background-color: darkgray;
+    opacity: .5;
+
+}
+.change-day {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.change-day__arrows {
+    font-size: 30px;
+}
+.change-day__arrows i {
+    cursor: pointer;
+}
